@@ -47,6 +47,7 @@ Install these libraries using pip:
 - **Move Penalty**: -1 point per move to encourage efficiency.
 
 ### **Q-Learning**
+
 The Q-table stores state-action values for all possible state-action pairs.  
 The agent selects actions based on an epsilon-greedy policy, balancing exploration and exploitation.  
 
@@ -56,11 +57,12 @@ The Q-value update rule is:
 Q(s, a) = Q(s, a) + \alpha \left[ r + \gamma \max_a Q(s', a') - Q(s, a) \right]
 \]
 
-Where:
-- \(Q(s, a)\): Current Q-value for state \(s\) and action \(a\).
-- \(\alpha\): Learning rate.
-- \(r\): Reward for the current action.
-- \(\gamma\): Discount factor for future rewards.
+Where:  
+- **\( Q(s, a) \)**: Current Q-value for state \( s \) and action \( a \).  
+- **\( \alpha \)**: Learning rate.  
+- **\( r \)**: Reward for the current action.  
+- **\( \gamma \)**: Discount factor for future rewards.
+
 
 ---
 
@@ -70,6 +72,8 @@ The environment is displayed in real-time during training. Each component is rep
 - **Player**: Blue (BGR: 255, 175, 0)
 - **Food**: Green (BGR: 0, 255, 0)
 - **Enemy**: Red (BGR: 0, 0, 255)
+
+
 ![Environment](./Env.png)
 ---
 
@@ -109,6 +113,7 @@ You can adjust the following parameters in the script:
 1. **Visualization**: The training process is visualized, showing the player, food, and enemy positions.
 2. **Q-Table**: Saved as a `.pickle` file after training.
 3. **Rewards Graph**: Displays the moving average of rewards over episodes.
+
 ![Rewards](./player_rewards.png)
 ---
 
