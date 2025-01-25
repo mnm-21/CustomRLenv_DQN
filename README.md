@@ -77,11 +77,12 @@ The environment is displayed in real-time during training. Each component is rep
 
 ## **Running the Code**
 
-1. Save the script as `blob_rl.py`.
+1. Save the script as `model.py`.
 2. Run the script:
-'''
-python model.py
-'''
+
+   ```
+   python model.py
+   ```
 3. Watch the training process in the visualized grid environment.
 4. Check the moving average rewards graph after training to evaluate the agent's learning progress.
 
