@@ -53,15 +53,13 @@ The agent selects actions based on an epsilon-greedy policy, balancing explorati
 
 The Q-value update rule is:  
 
-\[
-Q(s, a) = Q(s, a) + \alpha \left[ r + \gamma \max_a Q(s', a') - Q(s, a) \right]
-\]
+Q(s, a) = Q(s, a) + α [ r + γ max_a Q(s', a') - Q(s, a) ]
 
-Where:  
-- **\( Q(s, a) \)**: Current Q-value for state \( s \) and action \( a \).  
-- **\( \alpha \)**: Learning rate.  
-- **\( r \)**: Reward for the current action.  
-- **\( \gamma \)**: Discount factor for future rewards.
+Where:
+- **Q(s, a)**: Current Q-value for state `s` and action `a`.
+- **α**: Learning rate.
+- **r**: Reward for the current action.
+- **γ**: Discount factor for future rewards.
 
 
 ---
